@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Car Use 🚗🏎️",
+        "emission": "3360",
+        "time": "1"
+    },
+    {
+        "name": "Plastic Bag 🛍️",
+        "emission": "33",
+        "time": "none"
+    },
+    {
+        "name": "Plastic Water Bottle 🥤",
+        "emission": "83",
+        "time": "none"
+    },
+    {
+        "name": "Disposable Drink/Coffee Cup 🧋",
+        "emission": "16",
+        "time": "none"
+    },
+    {
+        "name": "Phone/Device Usage 📱🖥️",
+        "emission": "172",
+        "time": "1"
+    },
+    {
+        "name": "Clothes Shopping 👕",
+        "emission": "187",
+        "time": "none"
+    },
+    {
+        "name": "Toilet Paper Rolls 🧻",
+        "emission": "1300",
+        "time": "none"
+    },
+    {
+        "name": "Flight Use ✈️☁️",
+        "emission": "40000",
+        "time": "1"
+    },
+    {
+        "name": "Microwave Use ♨️",
+        "emission": "400",
+        "time": "none"
+    },
+    {
+        "name": "Washing Machine 🩳🫧",
+        "emission": "275",
+        "time": "none"
+    },
+    {
+        "name": "Dryer ☀️👖",
+        "emission": "1000",
+        "time": "none"
+    },
+    {
+        "name": "Kettle 🫖",
+        "emission": "50",
+        "time": "none"
+    },
+    {
+        "name": "Lights 💡",
+        "emission": "43",
+        "time": "1"
+    },
+    {
+        "name": "Hot Shower 🚿",
+        "emission": "12000",
+        "time": "1"
+    },
+    {
+        "name": "Electric Stove/Hob Use ⚡",
+        "emission": "675",
+        "time": "none"
+    },
+    {
+        "name": "Gas Stove/Hob Use 🫕",
+        "emission": "167",
+        "time": "none"
+    },
+    {
+        "name": "Cooling/Air Conditioning ❄️",
+        "emission": "83",
+        "time": "1"
+    },
+    {
+        "name": "Heating 🔥",
+        "emission": "292",
+        "time": "1"
+    }
+]

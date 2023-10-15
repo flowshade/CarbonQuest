@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Lexend Deca', sans-serif;
+
+  color-scheme: light;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+h1 {
+  @apply text-3xl text-black;
+}
+
+h2 {
+  @apply text-2xl text-green font-extrabold;
+}
+
+p {
+  @apply text-black;
+}
+
+section {
+  @apply bg-neutral-100 rounded-xl m-4 p-4 shadow-lg;
+}
+
+.button {
+  @apply outline-none drop-shadow-lg px-5 py-3;
+}
+
+.input {
+  @apply p-3 text-black outline-none focus:ring ring-green transition-all mb-3;
+}
+
+.modal-overlay {
+  @apply fixed top-0 left-0 h-full w-full bg-black bg-opacity-70 hidden;
+}
+
+.modal-overlay .modal {
+  @apply relative top-[20%] m-3;
+}
+
+#addGoal:target {
+  @apply block;
+}
+
+.main {
+  @apply max-w-lg mx-auto touch-manipulation;
+}
