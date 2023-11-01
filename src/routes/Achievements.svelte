@@ -64,13 +64,17 @@
                             <span class="sr-only">Loading...</span>
                         </div>
                     {:then goalData}
-                        {console.log(goalData)}
+                        <!-- {console.log(goalData)} -->
                         {#if (achievement.type == "goalCount") && (goalData.length > 0)}
                             <div class="text-green">Completed! 🌳</div>
                         {:else if (achievement.type == "screenTimeGoal")}
                             <!-- traverse array -->
-                            {#each $goals as goal}
-                                {console.log(goal)}
+                            {#each goalData as goal}
+                                {#if (goal.goalTitle == "Phone/Device Usage 📱🖥️")}
+                                    {#if (goal.hourOrUsageGoal / goal.originalHoursUsed) < 0.5}
+                                        <div class="text-green">Completed! 🌳</div>
+                                    {/if}
+                                {/if}
                             {/each}
                         {/if}
                     {/await}
