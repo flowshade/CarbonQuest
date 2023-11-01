@@ -1,26 +1,36 @@
 [
     {
-        "title": "Climate Concious 🍃",
-        "description": "Create your first carbon emission reduction goal."
+        "title": "Climate Conscious 🍃",
+        "description": "Create your first carbon emission reduction goal.",
+        "type": "goalCount"
     },
     {
         "title": "Screen Time 🤖",
-        "description": "Reduce your screen time by 50%"
+        "description": "Reduce your screen time by 50%",
+        "type": "screenTimeGoal"
     },
     {
         "title": "7 Day Streak 🔥",
-        "description": "Your total average emissions have been under your set emission goal for 7 days straight!"
+        "description": "Your total average emissions have been under your set emission goals for 7 days straight!",
+        "type": "streak",
+        "streakGoal": 7
     },
     {
         "title": "25 Day Streak 🔥",
-        "description": "Your total average emissions have been under your set emission goal for 25 days straight!"
+        "description": "Your total average emissions have been under your set emission goals for 25 days straight!",
+        "type": "streak",
+        "streakGoal": 25
     },
     {
         "title": "50 Day Streak 🔥",
-        "description": "Your total average emissions have been under your set emission goal for 50 days straight!"
+        "description": "Your total average emissions have been under your set emission goals for 50 days straight!",
+        "type": "streak",
+        "streakGoal": 50
     },
     {
         "title": "100 Day Streak ❤️‍🔥",
-        "description": "Your total average emissions have been under your set emission goal for 100 days straight!"
+        "description": "Your total average emissions have been under your set emission goals for 100 days straight!",
+        "type": "streak",
+        "streakGoal": 100
     }
 ]

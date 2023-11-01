@@ -10,6 +10,7 @@
             let payload = {
                 goalTitle: goalTitle.name,
                 totalEmissions: (goalTitle.emission * multiplier),
+                originalHoursUsed: multiplier,
                 emissionGoal: (emissionGoal * goalTitle.emission),
                 emissionPerUnit: goalTitle.emission,
                 hourOrUsageGoal: emissionGoal,

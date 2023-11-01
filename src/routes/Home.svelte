@@ -43,6 +43,7 @@
         
         try {
             let id = db.stats.add(dayStatisticsPayload)
+            console.log(id.value)
         } catch(error) {
             console.log(dayStatisticsPayload, error);
         }
@@ -55,6 +56,14 @@
         {#each $goals as goal (goal.id)}
             <Goal goal={goal}/>
         {/each}
+        {#if ($goals.length == 0)}
+            <div class="text-center mt-12 max-h-64">
+                <img src="/dreamer.svg" alt="tree-svg" srcset="" class="h-64 w-64 mx-auto">
+            </div>
+            <p class="mx-4 text-center">Add a <b>CarbonQuest</b> to get started!<br/>Click the <span class="font-bold text-xl text-green">&plus;</span> icon below.</p>
+        {:else}
+            <button class="button bg-green mx-4 rounded-xl" on:click={updateStatistics}>Save Today's Activity</button>
+        {/if}
     {/if}
     {#if ($profile)}
         {#if ($profile.length == 0)}
@@ -63,7 +72,6 @@
             {console.log("PROFILE EXISTS")}
         {/if}
     {/if}
-    <button class="button bg-green mx-4 rounded-xl" on:click={updateStatistics}>Save Today's Activity</button>
     <NewGoal />
     <MenuBar/>
 </main>
