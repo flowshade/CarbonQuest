@@ -12,6 +12,8 @@
     
     import { liveQuery } from "dexie";
     import { db } from "../lib/db";
+    // import { useHistory } from 'svelte-routing';
+    // import { goto } from '$app/navigation';
 
     let profile = liveQuery(() => db.profile.toArray())
     
@@ -65,13 +67,13 @@
             <button class="button bg-green mx-4 rounded-xl" on:click={updateStatistics}>Save Today's Activity</button>
         {/if}
     {/if}
-    <!-- {#if ($profile)}
+    {#if ($profile)}
         {#if ($profile.length == 0)}
-            {location.href = "/profile"}
+            {this.$router.push('/profile')}
         {:else}
             {console.log("PROFILE EXISTS")}
         {/if}
-    {/if} -->
+    {/if}
     <NewGoal />
     <MenuBar/>
 </main>
