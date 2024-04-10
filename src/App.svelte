@@ -10,7 +10,7 @@
   export let url = "";
 </script>
 
-<Router {url} basepath="/CarbonQuest">
+<Router {url}>
   <div>
     <Route path="/stats"><Stats/></Route>
     <Route path="/achievements"><Achievements/></Route>

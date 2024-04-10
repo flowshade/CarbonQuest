@@ -1,6 +1,6 @@
 <script>
     import MenuBar from '../components/MenuBar.svelte'
-  import Streak from '../components/Streak.svelte';
+    import Streak from '../components/Streak.svelte';
     import { db } from "../lib/db";
     import { liveQuery } from "dexie";
     import { navigate } from "svelte-routing";
