@@ -65,13 +65,13 @@
             <button class="button bg-green mx-4 rounded-xl" on:click={updateStatistics}>Save Today's Activity</button>
         {/if}
     {/if}
-    {#if ($profile)}
+    <!-- {#if ($profile)}
         {#if ($profile.length == 0)}
             {location.href = "/profile"}
         {:else}
             {console.log("PROFILE EXISTS")}
         {/if}
-    {/if}
+    {/if} -->
     <NewGoal />
     <MenuBar/>
 </main>
