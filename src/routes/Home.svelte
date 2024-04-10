@@ -14,6 +14,7 @@
     import { db } from "../lib/db";
     // import { useHistory } from 'svelte-routing';
     // import { goto } from '$app/navigation';
+    import { navigate } from "svelte-routing";
 
     let profile = liveQuery(() => db.profile.toArray())
     
@@ -69,7 +70,7 @@
     {/if}
     {#if ($profile)}
         {#if ($profile.length == 0)}
-            {this.$router.push('/profile')}
+            {navigate("/profile", {replace: true})}
         {:else}
             {console.log("PROFILE EXISTS")}
         {/if}
