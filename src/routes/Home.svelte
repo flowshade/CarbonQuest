@@ -67,7 +67,7 @@
     {/if}
     {#if ($profile)}
         {#if ($profile.length == 0)}
-            {location.href = "/profile"}
+            {location.href = "/CarbonQuest/profile"}
         {:else}
             {console.log("PROFILE EXISTS")}
         {/if}
